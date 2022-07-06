@@ -16,7 +16,7 @@ def seating():
             minority = boys
             triple_symbol = str('GBG')
             double_symbol = str('BG')
-            difference = majority - minority
+        difference = majority - minority
         print(f'Ответ: {triple_symbol * difference + double_symbol * (minority - difference)}')
 
 
