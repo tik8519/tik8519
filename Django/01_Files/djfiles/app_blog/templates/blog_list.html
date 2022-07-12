@@ -1,0 +1,41 @@
+{% extends "inter.htm" %}
+{% block content %}
+    {% load i18n %}
+    <html lang="en">
+    <body>
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_language_info for LANGUAGE_CODE as lang %}
+    {{ lang.name_local }}<br>
+    {% trans "Public" %}
+        {% if request.user.is_authenticated %}
+            <h3>{% trans "Welcome to the website" %} {{ request.user.username }}</h3>
+            <h3><a href="logout/">{% trans "Go out" %}</a></h3>
+            <h3><a href="edit/">{% trans "Edit user information" %}</a></h3>
+            <h3><a href="blog_form/">{% trans "Add an entry" %}</a></h3>
+            <h3><a href="upload/">{% trans "Add entries from a file" %}</a></h3>
+        {% else %}
+            <h3>{% trans "You are not logged in to the site" %}</h3>
+            <h3><a href="login/">{% trans "Enter" %}</a></h3>
+            <h3><a href="register/">{% trans "Registration" %}</a></h3>
+        {% endif %}
+
+        <h1>{% trans "Publications" %}</h1>
+        <ul><h3>---------------------------------------------------------</h3></ul>
+        {% if blog_list %}
+        <ul>
+            {% for blog in blog_list %}
+            <li>
+                <h3>{% trans "Author:" %} {{ blog.author }}</h3>
+                <h3><a href="{{ blog.id }}">{{ blog.title }}</a></h3>
+                <h3>{{ blog.reduced_text }}</h3>
+                <h4>{% trans "Published:" %} {{ blog.created_at }}</h4>
+                <h3>---------------------------------------------------------</h3>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+            <p>Публикаций нет.</p>
+        {% endif %}
+    </body>
+    </html>
+{% endblock %}

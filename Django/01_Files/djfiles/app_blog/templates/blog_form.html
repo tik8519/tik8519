@@ -1,0 +1,15 @@
+{% extends "inter.htm" %}
+{% block content %}
+    {% load i18n %}
+<html>
+<h3>Добавление новости</h3>
+<h5><a href="/">на главную</a></h5>
+<body>
+    <form method="post" action="/blog_form/">
+        {% csrf_token %}
+        {{ blog_form.as_p }}
+        <button type="submit">Добавить</button>
+    </form>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "inter.htm" %}
+{% block content %}
+    {% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h2>Регистрация</h2>
+    <h3><a href="/">назад</a></h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Регистрация</button>
+    </form>
+</body>
+</html>
+{% endblock %}

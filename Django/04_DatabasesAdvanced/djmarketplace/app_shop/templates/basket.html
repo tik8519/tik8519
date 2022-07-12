@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3><a href="/">назад</a></h3>
+<h3>Добавленные товары:</h3>
+{% for product in basket_product %}
+    <h4><ul>{{ product.product.name }} Цена: {{ product.cost }} Кол-во: {{ product.count }}</ul></h4>
+{% endfor %}
+<h3>Сумма покупок: {{ sum }}</h3>
+<form action="buy/" method="post">
+                    {% csrf_token %}
+    <input type="submit" value="Купить">
+</form>
+</body>
+</html>

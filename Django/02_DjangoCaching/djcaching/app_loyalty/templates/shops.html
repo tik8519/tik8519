@@ -1,0 +1,21 @@
+{% extends "inter.htm" %}
+{% load cache %}
+{% cache 500 footer %}
+    {% block content %}
+        {% load i18n %}
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+        </head>
+        <body>
+        <h2>{% trans 'List of available stores' %}</h2>
+        {% for shop in shops %}
+            <h3>------------------------------</h3>
+            <ul>{{ shop.name }}</ul>
+            {% trans 'Address' %}: {{ shop.address }}
+            <h3>------------------------------</h3>
+        {% endfor %}
+        </body>
+        </html>
+    {% endblock %}
+{% endcache %}

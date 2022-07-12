@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3><a href="/">Вернуться в личный кабинет</a></h3>
+<h3>{{ error_text }}</h3>
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="team_name">Укажите сумму пополнения баланса: </label>
+    <input id="team_name" type="text" name="refill" value="">
+    <input type="submit" value="OK">
+</form>
+</body>
+</html>

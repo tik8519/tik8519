@@ -1,0 +1,33 @@
+<html lang="en">
+<body>
+    {% if request.user.is_authenticated %}
+        <h3>Добро пожаловать {{ request.user.username }}</h3>
+        <h3><a href="logout/">Выйти</a></h3>
+        <h3><a href="balance/">Пополнить баланс</a></h3>
+        <h3><ul>Ваш баланс: {{ user.profile.balance }}</ul></h3>
+        <h3><ul>Ваш статус: {{ user_statys }}</ul></h3>
+        <h3><a href="basket/">Товаров в корзине:</a> {{ basket_count }}</h3>
+        <h3><a href="top_product/">Рейтинг товаров</a></h3>
+        <h3>Наши магазины:</h3>
+        {% for key, value in product.items %}
+            <h4>{{ key }}</h4>
+            {% for item_product in value %}
+                <h4><ul><li>Наименование: {{ item_product.0 }}</li></ul></h4>
+                <h4><ul>Цена: {{ item_product.1 }} Доступное кол-во: {{ item_product.2 }}<ul></h4>
+                <form action="add_basket/" method="post">
+                    {% csrf_token %}
+                    <label for="team_name">Укажите количество для покупки: </label>
+                    <input type="hidden" name="shop_id" value="{{ item_product.3 }}">
+                    <input type="hidden" name="product_id" value="{{ item_product.4 }}">
+                    <input id="team_name" type="text" name="count" value="">
+                    <input type="submit" value="В корзину">
+                </form>
+            {% endfor %}
+        {% endfor %}
+    {% else %}
+        <h3>Вы не зарегистрированы на сайте</h3>
+        <h3><a href="login/">Войти</a></h3>
+        <h3><a href="register/">Регистрация</a></h3>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "inter.htm" %}
+{% block content %}
+    {% load i18n %}
+<html>
+<h3>Редактирование информации о пользователе</h3>
+<h3><a href="/">назад</a></h3>
+<body>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ user_form.as_p }}
+        <button type="submit">Сохранить</button>
+    </form>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "inter.htm" %}
+{% block content %}
+    {% load i18n %}
+<html>
+<h3><a href="/">назад</a></h3>
+    <ul>
+        <li>
+            <h3>{{ blog.title }}</h3>
+            <h5>{{ blog.description }}</h5>
+            <ul>Дата создания: {{ blog.created_at }}</ul>
+            <ul>Автор: {{ blog.author }}</ul>
+            <ul>Изображения: </ul>
+            {% for image in images %}
+                <img src="{{ image.file.url }}" width="300px">
+            {% endfor %}
+        </li>
+        {% if request.user == blog.author %}
+            <li>
+                <h3>Загрузить изображения</h3>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Загрузить</button>
+                </form>
+            </li>
+        {% endif %}
+    </ul>
+{% endblock %}

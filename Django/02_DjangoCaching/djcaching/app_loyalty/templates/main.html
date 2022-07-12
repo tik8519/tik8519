@@ -1,0 +1,36 @@
+{% extends "inter.htm" %}
+{% block content %}
+    {% load i18n %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+    {% if request.user.is_authenticated %}
+        <h3>{% trans "Welcome to the website" %} {{ request.user.username }}</h3>
+        <h3><a href="logout/">{% trans "Go out" %}</a></h3>
+        <h3><a href="shops/">{% trans "List of stores" %}</a></h3>
+        <h2>{% trans "Your balance" %} {{ balance.balance }}</h2>
+        <h2>{% trans "Action of the day" %}: {{ promotion.name }}</h2>
+        {% if purchases %}
+            <h2>{% trans "Shopping list" %}:</h2>
+            {% for purchase in purchases %}
+                <h3>------------------------------------------</h3>
+                <h3>{% trans "Name" %}: {{ purchase.name }}</h3>
+                <h3>{% trans "Price" %}: {{ purchase.cost }}</h3>
+                <h3>{% trans "Quantity" %}: {{ purchase.count }}</h3>
+                <h3>{% trans "Total" %}: {{ purchase.summ }}</h3>
+                <h3>------------------------------------------</h3>
+            {% endfor %}
+        {% else %}
+        <h3>{% trans "The shopping list is empty" %}</h3>
+        {% endif %}
+    {% else %}
+        <h3>"You are not logged in to the site"</h3>
+        <h3><a href="login/">{% trans "Enter" %}</a></h3>
+        <h3><a href="register/">{% trans "Registration" %}</a></h3>
+    {% endif %}
+    </body>
+    </html>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "inter.htm" %}
+{% block content %}
+    {% load i18n %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% trans "Login" %}</title>
+    </head>
+    <body>
+    <h2>{% trans 'Login page' %}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans "Enter" %}</button>
+    </form>
+    </body>
+    </html>
+{% endblock %}

@@ -1,0 +1,191 @@
+
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-22 22:08:19.309563 Пользователь авторизовался
+2022-06-22 22:08:42.421224 Пользователь admin оформил заказ
+Пользователь оплатил заказ
+Internal Server Error: /basket/buy/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Evgeniy\Desktop\python_django\15_databasesadvanced\djmarketplace\app_shop\views.py", line 154, in buy
+    print(first_statys())
+TypeError: 'str' object is not callable
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-22 22:09:57.299675 Пользователь авторизовался
+Пользователь оплатил заказ
+2022-06-22 22:10:11.235861 Пользователь admin оформил заказ
+Пользователь оплатил заказ
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-22 22:12:34.833716 Пользователь авторизовался
+2022-06-22 22:12:47.840241 Пользователь admin оформил заказ
+Пользователь оплатил заказ
+2022-06-22 22:12:58.240912 Пользователь admin оформил заказ
+Пользователь оплатил заказ
+2022-06-22 22:13:00.754192 Пользователь admin повысил свой статут
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-22 22:14:42.192974 Пользователь авторизовался
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-22 22:15:03.857233 Пользователь авторизовался
+2022-06-22 22:17:02.371129 Пользователь admin пополнил баланс
+2022-06-22 22:17:18.678316 Пользователь admin оформил заказ
+2022-06-22 22:17:21.858483 Пользователь admin оплатил заказ
+2022-06-22 22:17:21.900791 Пользователь admin повысил свой статут
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-22 22:20:04.672689 Пользователь авторизовался
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-22 22:21:03.788017 Пользователь авторизовался
+2022-06-22 22:21:20.030592 Пользователь AnonymousUser авторизовался
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-22 22:23:13.014599 Пользователь авторизовался
+2022-06-22 22:23:24.060650 Пользователь admin авторизовался
+2022-06-22 22:24:00.425472 Пользователь evgeniy авторизовался
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-22 23:06:07.484434 Пользователь evgeniy пополнил баланс
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+2022-06-23 20:23:08.207951 Пользователь evgeniy пополнил баланс
+2022-06-23 20:24:19.533831 Пользователь evgeniy оформил заказ
+2022-06-23 20:24:28.400401 Пользователь evgeniy оплатил заказ
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+2022-06-24 21:32:51.203550 Пользователь evgeniy оформил заказ
+2022-06-24 21:32:57.418953 Пользователь evgeniy оформил заказ
+2022-06-24 21:35:09.168206 Пользователь evgeniy оформил заказ
+2022-06-24 21:35:16.683431 Пользователь evgeniy оформил заказ
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\db\models\options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Evgeniy\Desktop\python_django\15_databasesadvanced\djmarketplace\app_shop\views.py", line 53, in user_account
+    user = User.objects.only('name').get(id=user_id)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1348, in execute_sql
+    sql, params = self.as_sql()
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 573, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 64, in pre_sql_setup
+    self.setup_query()
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 55, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 247, in get_select
+    cols = self.get_default_columns()
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 788, in get_default_columns
+    only_load = self.deferred_to_columns()
+  File "C:\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1279, in deferred_to_columns
+    self.query.deferred_to_data(columns, self.query.get_loaded_field_names_cb)
+  File "C:\Python310\lib\site-packages\django\db\models\sql\query.py", line 752, in deferred_to_data
+    field = opts.get_field(parts[-1])
+  File "C:\Python310\lib\site-packages\django\db\models\options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: User has no field named 'name'
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Evgeniy\Desktop\python_django\15_databasesadvanced\djmarketplace\app_shop\views.py", line 53, in user_account
+    user = User.objects.only('id', 'username').get(id=user_id)
+UnboundLocalError: local variable 'user_id' referenced before assignment
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-24 22:15:08.188276 Пользователь evgeniy оформил заказ
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-24 22:18:05.650392 Пользователь evgeniy оформил заказ
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /add_basket/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Evgeniy\Desktop\python_django\15_databasesadvanced\djmarketplace\app_shop\views.py", line 114, in add_basket
+    product_name = product.Products.name
+AttributeError: 'AvailabilityProducts' object has no attribute 'Products'
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /add_basket/
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Evgeniy\Desktop\python_django\15_databasesadvanced\djmarketplace\app_shop\views.py", line 116, in add_basket
+    order = Basket(user=user, product=product_name, cost=product_name.cost, count=count)
+AttributeError: 'str' object has no attribute 'cost'
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-24 22:22:56.724268 Пользователь evgeniy оформил заказ
+2022-06-24 22:23:05.705831 Пользователь evgeniy оплатил заказ
+2022-06-24 22:23:12.092880 Пользователь evgeniy оформил заказ
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-24 22:32:58.202442 Пользователь evgeniy оплатил заказ
+C:\Users\Evgeniy\Desktop\python_django\15_DatabasesAdvanced\djmarketplace\app_shop\views.py changed, reloading.
+Watching for file changes with StatReloader
+2022-06-24 22:35:29.125146 Пользователь evgeniy оформил заказ
+2022-06-24 22:35:32.047614 Пользователь evgeniy оплатил заказ
