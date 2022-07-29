@@ -76,7 +76,7 @@ def user_account(request):
 def balance(request):
     """Пополнение баланса счета"""
     if request.method == 'GET':
-        return render(request, 'users/balance.html')
+        return render(request, 'users/sending.html')
     elif request.method == 'POST':
         refill = request.POST['refill']
         try:
@@ -93,7 +93,7 @@ def balance(request):
             logger.info(f'{datetime.datetime.now()} Пользователь {request.user} пополнил баланс')
         except ValueError:
             error_text = 'Ошибка! Введите целое число!'
-        return render(request, 'users/balance.html', {'error_text': error_text})
+        return render(request, 'users/sending.html', {'error_text': error_text})
 
 
 def add_basket(request):
